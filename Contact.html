@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLTI</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Contact.css">
+</head>
+<body>
+ <fieldset id="Main_Field" style="border: solid black 5px; background-color: white; border-radius: 10px; height: fit-content;">
+    <div class="fild">
+
+        <div class="top">
+            <h2><a href="index.html">Home</a></h2>
+            <h2><a href="About us.html">About us</a></h2>
+            <h2><a href="Courses.html">Courses</a></h2>
+            <h2><a href="Services.html">Services</a></h2>
+            <h2><a href="Enquiry.html">Enquiry</a></h2>
+            <h2><a href="Contact.html">Contact</a></h2>
+        </div>
+
+        <div class="page">
+            <img src="Images/contact us_.jpg" alt="Images/Contact Iamge" style="height: 200px; width: 250px; border-radius: 10px; padding: 10px 10px;">
+
+            <fieldset style="border: 0px; width: 466; background-position-y: top; float: right;">
+                <div class="main-content" style="float: right;">
+                    <p>
+                          <b>Maa Laxmi Technical Institute provides you a complete knowledge.</b><br>
+                          <b>In which you can learn <a href="Enquiry.html" class="typewrite" data-period="2000" data-type='[ "JCB", "Pokelan", "Car", "Tractor", "Mobile Crane", "etc." ]'>
+                            <span class="wrap"></span>
+                          </a></b><br>
+                          <b>Benduwar Road, Ahirauli Bazar, Kushinagar (U.P. / India)<br>Contact No :- 9198223073, 9936845383<br>For fill the our contact form <a href="https://forms.gle/CmxBrH55CwGVLAgk6" class="button-30" method="get" target="_blank" >click me...</a>
+                            <style>
+                                
+                        /* CSS */
+                        .button-30 {
+                          align-items: center;
+                          appearance: none;
+                          background-color: #FCFCFD;
+                          border-radius: 4px;
+                          border-width: 0;
+                          box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+                          box-sizing: border-box;
+                          color: #36395A;
+                          cursor: pointer;
+                          display: inline-flex;
+                          font-family: "JetBrains Mono",monospace;
+                          height: 28px;
+                          justify-content: center;
+                          line-height: 1;
+                          list-style: none;
+                          overflow: hidden;
+                          padding-left: 16px;
+                          padding-right: 16px;
+                          position: relative;
+                          text-align: left;
+                          text-decoration: none;
+                          transition: box-shadow .15s,transform .15s;
+                          user-select: none;
+                          -webkit-user-select: none;
+                          touch-action: manipulation;
+                          white-space: nowrap;
+                          will-change: box-shadow,transform;
+                          font-size: 18px;
+                        }
+                        
+                        .button-30:focus {
+                          box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+                        }
+                        
+                        .button-30:hover {
+                          box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+                          transform: translateY(-2px);
+                        }
+                        
+                        .button-30:active {
+                          box-shadow: #D6D6E7 0 3px 7px inset;
+                          transform: translateY(2px);
+                        }
+                            </style></b></p><br><br>
+                            
+               <div class ="frame" style="margin-bottom: 0px;">
+                <a href="#" class="btn">
+                <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+                </a>
+                <a href="#" class="btn">
+                <i class="fab fa-instagram" style="color:pink ;"></i>
+                </a>
+                <a href="#" class="btn">
+                <i class="fab fa-whatsapp" style="color:green;"></i>
+                </a>
+                <a href="#" class="btn">
+                <i class="far fa-envelope"></i>
+                </a>
+              </div>
+               </div>
+               
+            </fieldset>
+        </div>
+
+        <div id="footer">
+            Copyright © 2023 
+            <a href="Main.html">
+                <strong>Maa Laxmi Technical Institute</strong>
+            </a>
+        </div>
+    </div>
+ </fieldset>
+      <!--JS Script-->
+    <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                  new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.18em solid black}";
+            document.body.appendChild(css);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--Totaly complete-->
+<!--On Date:- 22/06/2023 | Day:- wednesday | Time:- 1:50 PM-->
+<!--The End-->

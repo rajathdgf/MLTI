@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    width: 728px;
+    height: 267.59px;
+    margin-left: 15%;
+    margin-right: auto;
+    background-color: #c4c4c4;
+}
+
+/*MENU BAR*/
+.top{
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  display: flex;
+  width: 905px;
+  margin-top: 0px;
+  background-color: grey;
+  border-radius: 20px;
+  height: 40px;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  margin: 40px;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px gold;
+}
+/* {a} link of pages */
+  a{
+      text-decoration: none;
+      color:white;
+  }
+h2 :hover{
+  cursor: pointer;
+  color: black;
+  text-shadow: 2px 2px 5px gold;
+  text-decoration: none;
+}
+
+ * {color:black; text-decoration: none;}
+ 
+/* { Title Animation } */
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(254, 255, 255);
+    font-family: 'Lobster';
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin: 5 10px;
+    height: 30px;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(3, 247, 255);
+  }
+ /*Span*/ 
+  span::before {
+    content: "WELCOME !!";
+    animation: animate infinite 20s;
+    padding-left: 10px;
+  }
+
+  /*Key Frames*/
+  
+  @keyframes animate {
+  
+    5% {
+        content: "My self Rajan Singh";
+    }
+  
+    25% {
+        content: "I am the WEB Designer";
+    }
+    50% {
+        content: "Contact Number 6394274318";
+    }
+  
+    75% {
+        content: "Thanks for visiting the website";
+    }
+  }
+
+/* { HOME PAGE DECORATION }  */
+
+fieldset{
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    border: 0px;
+    
+}
+
+    /*Drirector Image*/
+    .Image1{
+        float: left;
+        height: 200px;
+        justify-content: center;
+        display: flex;
+    }
+
+    /*Main Content [Sentence]*/
+    p {
+        margin-left: 0px;
+        width: 700px;
+    }
+
+    /*News Box*/
+    .content-box{
+      height: 150px;
+      border: solid 0.5px;
+      border-radius: 20px;
+      width: fit-content;
+    }
+
+    .News-box{
+      color: mediumspringgreen;
+      margin-left: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    marquee{
+      width: 450px;
+      margin-left: 10px;
+    }
+    /*End of News box*/
+    
+/*Home Page Decoration End*/
+
+/* Other Images */
+img{
+    height: 250px;
+}
+
+/*Footer*/
+
+#footer{
+  clear: both;
+  width: 980px;
+  padding: 5px 0 20px 0;
+  text-align: center;
+  color: #333;
+  background-color: #FFF;
+}
+/* { The End } */

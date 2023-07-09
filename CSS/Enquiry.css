@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    width: 728px;
+    height: 267.59px;
+    margin-left: 15%;
+    margin-right: auto;
+    background-color: #c4c4c4;
+}
+
+/*MENU BAR*/
+.top{
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  display: flex;
+  width: 905px;
+  margin-top: 0px;
+  background-color: grey;
+  border-radius: 20px;
+  height: 40px;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  margin: 40px;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px gold;
+}
+/* {a} link of pages */
+  a{
+      text-decoration: none;
+      color:white;
+  }
+  * {color:black; text-decoration: none;}
+h2 :hover{
+  cursor: pointer;
+  color: black;
+  text-shadow: 2px 2px 5px gold;
+  text-decoration: none;
+}
+/* { Title Animation } */
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(254, 255, 255);
+    font-family: 'Lobster';
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin: 5 10px;
+    height: 30px;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(3, 247, 255);
+  }
+ /*Span*/ 
+  span::before {
+    content: "WELCOME !!";
+    animation: animate infinite 20s;
+    padding-left: 10px;
+  }
+
+/*Key Frames*/ 
+  @keyframes animate {
+  
+    5% {
+        content: "My self Rajan Singh";
+    }
+  
+    25% {
+        content: "I am the WEB Designer";
+    }
+    50% {
+        content: "Contact Number 6394274318";
+    }
+  
+    75% {
+        content: "Thanks for visiting the website";
+    }
+  }
+
+/*-{ Page Decoration }-*/
+.JCB{
+  border: solid black 5px;
+  border-radius: 15px;
+  box-shadow: red 12px 12px 12px;
+  margin-bottom: 30px;
+}
+.Pokelan{
+  border: solid black 5px;
+  border-radius: 15px;
+  box-shadow: rgb(255, 255, 0) 12px 12px 12px;
+  margin-bottom: 30px;
+}
+.Car{
+  border: solid black 5px;
+  border-radius: 15px;
+  box-shadow: rgb(0, 255, 0) 12px 12px 12px;
+  margin-bottom: 30px;
+}
+.Tractor{
+  border: solid black 5px;
+  border-radius: 15px;
+  box-shadow: rgb(0, 255, 242) 12px 12px 12px;
+  margin-bottom: 30px;
+}
+.Mobile_Crane{
+  border: solid black 5px;
+  border-radius: 15px;
+  box-shadow: rgb(106, 0, 255) 12px 12px 12px;
+  margin-bottom: 30px;
+}
+/*-{ Page Decoration End }-*/
+
+/*Footer*/
+#footer{
+  clear: both;
+  width: 980px;
+  padding: 5px 0 20px 0;
+  text-align: center;
+  color: #333;
+  background-color: #FFF;
+}
+/* { The End } */
