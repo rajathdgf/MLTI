@@ -39,10 +39,11 @@ body {
   }
 
    * {
-    color:black; 
+    color:black;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;}
+    justify-content: center;}
    
   /*Contact page Decoration*/
 fieldset{
